@@ -43,11 +43,10 @@
 
 
 
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+html, body {
     color: #e99c38;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .main {
