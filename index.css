@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Meow+Script&family=Merienda:wght@300;400;500;600;700;800;900&family=Style+Script&family=Tangerine:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.meow-font {
+    font-family: 'Meow Script';
+}
+
+.meri-font {
+    font-family: 'Merienda';
+}
+
+.ariz-font {
+    font-family: 'Arizonia';
+}
+
+.styl-font{
+    font-family: 'Style Script';
+}
+
+.fs0-5 {
+    font-size: 5rem;
+}
+
+.fs1 {
+    font-size: 4rem;
+}
+
+.fs2 {
+    font-size: 2.5rem;
+}
+
+.fs3 {
+    font-size: 2rem;
+}
+
+.fs4 {
+    font-size: 1.5rem;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e99c38;
+}
+
+.main {
+    background: linear-gradient(60deg, #112020 0%, #081313 50%, #070f18 100%);
+    width: 100vw;
+}
+
+.content {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    height: 102vh;
+}
+
+.card {
+    text-align: center;
+    width: max-content;
+    background-color: #050d14;
+    display: flex;
+    padding: 1rem;
+    width: 0;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 80px #172533;
+    border-radius: 20px;
+    translate: 100px;
+    transition: opacity 1s, translate 3s, width 3s;
+}
+
+.card-content{
+    position: relative;
+    border: 2px solid #f5b767;
+    border-radius: 20px;
+    text-align: center;
+    width: max-content;
+    background-color: #050d14;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100;
+}
+
+.card .card-content p {
+    transition: opacity 1s ease-in 2s;
+    opacity: 0;
+}
+
+.top-left {
+    position: absolute;
+    top: -7px;
+    left: -7px;
+    z-index: 2000;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: -7px;
+    right: -7px;
+}
+
+.hide {
+    opacity: 0;
+}
+
+
+.show {
+    opacity: 1;
+    width: 100%;
+    translate: 0 0;
+    width: 60vw;
+}
+
+.card.show .card-content p {
+    opacity: 1
+}
