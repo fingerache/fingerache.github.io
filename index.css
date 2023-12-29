@@ -51,7 +51,7 @@ html, body {
 
 .main {
     background: linear-gradient(60deg, #112020 0%, #081313 50%, #070f18 100%);
-    width: 100vw;
+    width: 100%;
 }
 
 .content {
