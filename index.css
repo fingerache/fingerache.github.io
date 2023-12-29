@@ -22,24 +22,26 @@
 }
 
 .fs0-5 {
-    font-size: 5rem;
+    font-size: 3.5rem;
 }
 
 .fs1 {
-    font-size: 4rem;
-}
-
-.fs2 {
-    font-size: 2.5rem;
-}
-
-.fs3 {
     font-size: 2rem;
 }
 
-.fs4 {
+.fs2 {
     font-size: 1.5rem;
 }
+
+.fs3 {
+    font-size: 1rem;
+}
+
+.fs4 {
+    font-size: 0.7rem;
+}
+
+
 
 body {
     display: flex;
@@ -135,4 +137,48 @@ body {
 
 .card.show .card-content p {
     opacity: 1
+}
+
+
+@media only screen and (max-width: 450px) {
+
+
+    .fs0-5 {
+        font-size: 2.5rem;
+    }
+
+    .fs1 {
+        font-size: 2rem;
+    }
+
+    .fs2 {
+        font-size: 1.5rem;
+    }
+
+    .fs3 {
+        font-size: 1rem;
+    }
+
+    .fs4 {
+        font-size: 0.7rem;
+    }
+
+
+    .top-left img{
+        height: 100px;
+    }
+
+    .bottom-right img{
+        height: 100px;
+    }
+
+    .card-content {
+        height: 80vh;
+    }
+
+    .show {
+        opacity: 1;
+        translate: 0 0;
+        width: 300px;
+    }
 }
